@@ -38,9 +38,7 @@ model = gb.Model('City Linking')
 model.modelSense = GRB.MAXIMIZE
 
 
-
-# Variables
-
+# Connectivity Variable
 y_t = {}
 
 
@@ -48,15 +46,30 @@ for t in T:
     for i in range(n):
         for j in range(i+1,n):
             y_t[t-1,i,j] = model.addVar(obj= (revt[t-1][i][j]-costs[i][j]), name='connected in year '+ str(t)+ ' between ' +str(i)+' and '+str(j))
-            y_t[t-1,j,i] =  y_t[t-1,i,j] 
+            y_t[t-1,j,i] = y_t[t-1,i,j] 
             y_t[t-1,i,i] = model.addVar(obj= (revt[t-1][i][j]-costs[i][j]), name='connected in year '+ str(t)+ ' between ' +str(i)+' and '+str(i))
 y_t[0,6,6] =  model.addVar(obj= (revt[0][5][6]-costs[5][6]), name='connected in year '+ str(1)+ ' between ' +str(6)+' and '+str(6))
 y_t[1,6,6] =  model.addVar(obj= (revt[1][5][6]-costs[5][6]), name='connected in year '+ str(2)+ ' between ' +str(6)+' and '+str(6))
 
-x = model.addVars( t,len(nodes), len(nodes), vtype=GRB.BINARY, name='Linked in year t+1')
+
+# Linked Variable
+x = {}
+for t in T:    
+    for i in range(n):
+        for j in range(i+1,n):
+            if(t == 2):
+                cost = costs[i][j]
+            else:
+                cost = 0
+            x[t-1,i,j] = model.addVar(obj= (-cost), name='Linked in year '+ str(t)+ ' between ' +str(i)+' and '+str(j))
+            x[t-1,j,i] = x[t-1,i,j] 
+            x[t-1,i,i] = model.addVar(obj= (-cost), name='Linked in year '+ str(t)+ ' between ' +str(i)+' and '+str(i))
+x[0,6,6] =  model.addVar(obj= (0), name='Linked in year '+ str(1)+ ' between ' +str(6)+' and '+str(6))
+x[1,6,6] =  model.addVar(obj= (-costs[5][6]), name='Linked in year '+ str(2)+ ' between ' +str(6)+' and '+str(6))
 
 model.update()
 
+# Constraints
 for i in range(n):
     for j in range(n):
         model.addConstr(x[0,i,j] <= x[1,i,j], "Existent link continuity")
@@ -64,26 +77,28 @@ for i in range(n):
 model.addConstrs((y_t[1,i,j] == 1 for i in range(n)
                               for j in range(n)
                               if i != j), name='Connectivity at the end')
-	
-# Constraints
+    
 model.addConstr(2+20*quicksum((y_t[0,i,j] for i in range(n) for j in range(n)))+49<= 0, "Ring network 1")
 model.addConstr(20*quicksum(y_t[0,i,j] for i in range(n) for j in range(n)) <= 0, 'Ring network 2')
 
 
 for i in range(n):
-	for j in range(n):
-		model.addConstrs(x[t-1,i,j] <= y_t[t-1,i,j] for t in T)
+    for j in range(n):
+        model.addConstrs(x[t-1,i,j] <= y_t[t-1,i,j] for t in T)
 
 model.addConstrs(y_t[t-1,i,i] == 1 for i  in range(n) for t in T)
+model.addConstrs(x[t-1,i,i] == 1 for i  in range(n) for t in T)
 
 model.addConstr(20*quicksum(y_t[0,i,j] for i in range(n) for j in range(n)) <= 0, 'Ring network 2')
 for i in range(n):
-	for j in range(n):
-		for k in range(n):
-			model.addConstrs(y_t[t-1,i,j] + y_t[t-1,j,k] - 1 <= y_t [t-1,i,k] for t in T)
+    for j in range(n):
+        for k in range(n):
+            model.addConstrs(y_t[t-1,i,j] + y_t[t-1,j,k] - 1 <= y_t [t-1,i,k] for t in T
+
 model.update()
 
 # Objective
+model
 
 # Optimization
 model.optimize()

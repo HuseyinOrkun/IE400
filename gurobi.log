@@ -1,0 +1,65 @@
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 12:58:00 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:08:57 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:09:46 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:09:50 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:09:58 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:21:44 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 892 rows, 172 columns and 2044 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve removed 81 rows and 42 columns
+Presolve time: 0.06s
+
+Solved in 0 iterations and 0.06 seconds
+Infeasible model
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:22:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 906 rows, 172 columns and 2058 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve removed 81 rows and 42 columns
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+
+Gurobi 8.1.0 (linux64, Python) logging started Tue Dec 25 13:24:05 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 906 rows, 172 columns and 2058 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [7e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve removed 81 rows and 42 columns
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
