@@ -63,3 +63,165 @@ Presolve time: 0.00s
 
 Solved in 0 iterations and 0.00 seconds
 Infeasible model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 16:46:52 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 906 rows, 172 columns and 2058 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 5e+01]
+Presolve time: 0.03s
+
+Solved in 0 iterations and 0.03 seconds
+Infeasible or unbounded model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:05:42 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:07:50 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:08:41 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:09:13 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:40:00 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:40:24 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:40:51 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:42:26 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:42:32 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:43:56 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:44:16 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 863 rows, 172 columns and 1988 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 116 rows and 50 columns
+Presolve time: 0.12s
+
+Solved in 0 iterations and 0.12 seconds
+Infeasible or unbounded model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:50:22 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:50:34 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:51:48 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:52:45 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:53:10 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:54:03 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:54:35 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 156 rows, 84 columns and 420 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible or unbounded model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:57:11 2018
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:57:32 2018
+
+Academic license - for non-commercial use only
+Warning: variable name "connected in year 1 between 0 and 1" has a space
+Warning: constraint name "A link can not be built in 2 years" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 156 rows, 84 columns and 420 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible or unbounded model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 17:59:32 2018
+
+Academic license - for non-commercial use only
+Warning: variable name "connected in year 1 between 0 and 1" has a space
+Warning: constraint name "A link can not be built in 2 years" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 156 rows, 84 columns and 420 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible or unbounded model
+
+Gurobi 8.1.0 (linux64, Python) logging started Sun Dec 30 18:03:45 2018
+
+Academic license - for non-commercial use only
+Warning: variable name "conn. in y1 between 0 and 1" has a space
+Warning: constraint name "A link can not be built in 2 years" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 156 rows, 84 columns and 420 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+00]
+  Objective range  [2e+01, 2e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible or unbounded model
